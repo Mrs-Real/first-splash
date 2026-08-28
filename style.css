@@ -76,7 +76,7 @@ html {
 .bg-keyword {
     position: fixed;
     right: 20px;               /* Small padding from the right side of the page */
-    top: 100%;
+    top: 20px;
     transform: translateY(-50%) rotate(90deg); /* Centers vertically and rotates 90 degrees */
     transform-origin: center right; /* Ensures accurate rotational tracking */
     
