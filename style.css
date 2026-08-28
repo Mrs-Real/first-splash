@@ -77,8 +77,8 @@ html {
     position: fixed;
     right: 20px;               /* Small padding from the right side of the page */
     top: 50%;
-    transform: translateY(-50%) rotate(90deg); /* Centers vertically and rotates 90 degrees */
-    transform-origin: center left; /* Ensures accurate rotational tracking */
+    transform: translateY(-40%) rotate(90deg); /* Centers vertically and rotates 90 degrees */
+    transform-origin: center right; /* Ensures accurate rotational tracking */
     
     /* Font styling requested */
     font-family: 'Inter', sans-serif;
