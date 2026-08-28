@@ -72,28 +72,6 @@ html {
     transform: translateY(-2px); 
 }
 
-/* 5. 90-Degree Rotated Keyword */
-.bg-keyword {
-    position: fixed;
-    right: 20px;               /* Small padding from the right side of the page */
-    top: 50%;
-    transform: translateY(-50%) rotate(90deg); /* Centers vertically and rotates 90 degrees */
-    transform-origin: center right; /* Ensures accurate rotational tracking */
-    
-    /* Font styling requested */
-    font-family: 'Inter', sans-serif;
-    font-weight: 900;          /* Bold/Heavy weight */
-    text-transform: uppercase; /* All caps */
-    color: #ffffff;
-    opacity: 0.5;              /* 50% opacity */
-    
-    font-size: clamp(4rem, 12vw, 8rem); /* Fluid sizing so it matches screen scale */
-    letter-spacing: 15px;      /* Dramatic letter spacing for abstract styling */
-    white-space: nowrap;       /* Keeps the word on one continuous line */
-    pointer-events: none;      /* Allows clicks to pass through the text safely */
-    z-index: 1;                /* Layers it behind main text but above the background image */
-}
-
 /* 6. Mobile Optimization */
 @media (max-width: 768px) {
     .hero-section {
@@ -104,9 +82,5 @@ html {
     }
     .hero-content {
         text-align: center;      
-    }
-    .bg-keyword {
-        right: 10px;
-        opacity: 0.3; /* Dropping opacity slightly more on mobile for readability */
     }
 }
