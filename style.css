@@ -76,8 +76,8 @@ html {
 .bg-keyword {
     position: fixed;
     right: 20px;               /* Small padding from the right side of the page */
-    top: 100%;
-    transform: translateY(2%) rotate(90deg); /* Centers vertically and rotates 90 degrees */
+    top: 50%;
+    transform: translateY(-50%) rotate(90deg); /* Centers vertically and rotates 90 degrees */
     transform-origin: center right; /* Ensures accurate rotational tracking */
     
     /* Font styling requested */
@@ -103,11 +103,10 @@ html {
         padding-right: 24px;
     }
     .hero-content {
-        text-align: left;      
+        text-align: center;      
     }
     .bg-keyword {
         right: 10px;
         opacity: 0.3; /* Dropping opacity slightly more on mobile for readability */
     }
 }
-
