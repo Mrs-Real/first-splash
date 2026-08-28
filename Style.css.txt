@@ -1,0 +1,116 @@
+Style.css
+Styling saved in same folder
+
+/* 1. Global Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    /* Clean sans-serif used as the default fallback */
+    font-family: 'Inter', sans-serif;
+    color: #2d3436; 
+    overflow-x: hidden; /* Prevents unwanted horizontal scrolling from text rotation */
+}
+
+/* 2. Right-Anchored Pastel Hero Section */
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 100vh; 
+    background-image: url('pastel-background.jpg'); 
+    background-size: cover;       
+    background-position: right center; 
+    background-repeat: no-repeat;  
+    background-attachment: fixed;  
+
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;         
+    padding-left: 10%;           
+}
+
+/* 3. Typography Mixing (Serif vs Sans-Serif) */
+.hero-content {
+    max-width: 540px;            
+    text-align: left;            
+    z-index: 2; /* Ensures content stays layered above background objects */
+}
+
+.hero-content h1 {
+    font-family: 'Playfair Display', serif; /* Elegant Serif Headline */
+    font-size: clamp(2.8rem, 6vw, 4.8rem); 
+    font-weight: 600;
+    line-height: 1.15;
+    margin-bottom: 24px;
+    letter-spacing: -0.5px;
+}
+
+.hero-content p {
+    font-family: 'Inter', sans-serif; /* Clean Sans-Serif Body */
+    font-size: clamp(1rem, 2vw, 1.15rem);
+    margin-bottom: 35px;
+    color: #57606f;              
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+/* 4. Minimalist Button */
+.cta-btn {
+    display: inline-block;
+    padding: 12px 35px;
+    background-color: #2d3436;   
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;          
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #57606f;   
+    transform: translateY(-2px); 
+}
+
+/* 5. 90-Degree Rotated Keyword */
+.bg-keyword {
+    position: fixed;
+    right: 20px;               /* Small padding from the right side of the page */
+    top: 50%;
+    transform: translateY(-50%) rotate(90deg); /* Centers vertically and rotates 90 degrees */
+    transform-origin: center right; /* Ensures accurate rotational tracking */
+    
+    /* Font styling requested */
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;          /* Bold/Heavy weight */
+    text-transform: uppercase; /* All caps */
+    color: #ffffff;
+    opacity: 0.5;              /* 50% opacity */
+    
+    font-size: clamp(4rem, 12vw, 8rem); /* Fluid sizing so it matches screen scale */
+    letter-spacing: 15px;      /* Dramatic letter spacing for abstract styling */
+    white-space: nowrap;       /* Keeps the word on one continuous line */
+    pointer-events: none;      /* Allows clicks to pass through the text safely */
+    z-index: 1;                /* Layers it behind main text but above the background image */
+}
+
+/* 6. Mobile Optimization */
+@media (max-width: 768px) {
+    .hero-section {
+        background-attachment: scroll; 
+        justify-content: center; 
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+    .hero-content {
+        text-align: center;      
+    }
+    .bg-keyword {
+        right: 10px;
+        opacity: 0.3; /* Dropping opacity slightly more on mobile for readability */
+    }
+}
+

@@ -1,0 +1,30 @@
+Index.html
+(Blank responsive single background with simple content overlay)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abstract Pastel Page</title>
+    <!-- Importing Google Fonts: Playfair Display (Serif) & Inter (Sans-Serif) -->
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Inter:wght@400;500&family=Playfair+Display:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 90-Degree Rotated Abstract Background Keyword -->
+    <div class="bg-keyword">PASTEL</div>
+
+    <header class="hero-section">
+        <div class="hero-content">
+            <h1>Artistic perspective in a modern world.</h1>
+            <p>Blending light blue and delicate pink gradients to create a soft, ethereal space for minimal exploration.</p>
+            <a href="#content" class="cta-btn">Explore</a>
+        </div>
+    </header>
+
+</body>
+</html>
